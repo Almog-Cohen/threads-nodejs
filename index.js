@@ -2,7 +2,7 @@ const { StaticPool } = require("node-worker-threads-pool");
 const LineByLineReader = require("line-by-line");
 const lr = new LineByLineReader("big.txt");
 
-const filePath = "./worker.js";
+const filePath = "./matcher.js";
 const pool = new StaticPool({
   size: 4,
   task: filePath,
